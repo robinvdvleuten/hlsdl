@@ -135,7 +135,7 @@ func (cli CLI) batchJobs(path string) ([]downloadJob, error) {
 	if err != nil {
 		return nil, fmt.Errorf("could not open input file: %w", err)
 	}
-	defer file.Close()
+	defer func() { _ = file.Close() }()
 
 	seen := make(map[string]int)
 	var jobs []downloadJob
