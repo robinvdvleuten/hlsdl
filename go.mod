@@ -1,4 +1,4 @@
-module github.com/robinvdvleuten/m3u8-downloader
+module github.com/robinvdvleuten/hlsdl
 
 go 1.24.9
 

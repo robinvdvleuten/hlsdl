@@ -22,8 +22,8 @@ type CLI struct {
 func main() {
 	var cli CLI
 	ctx := kong.Parse(&cli,
-		kong.Name("m3u8-downloader"),
-		kong.Description("Download an m3u8 playlist to a local mp4 file using ffmpeg."),
+		kong.Name("hlsdl"),
+		kong.Description("Download an HLS stream from an m3u8 manifest to a local mp4 file using ffmpeg."),
 		kong.UsageOnError(),
 	)
 

@@ -16,7 +16,7 @@ builds:
       - linux
       - windows
       - darwin
-    binary: m3u8-downloader
+    binary: hlsdl
 
 archives:
   - formats: [tar.gz]

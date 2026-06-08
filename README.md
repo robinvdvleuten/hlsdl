@@ -1,4 +1,4 @@
-# m3u8-downloader
+# hlsdl
 
 A small Go CLI for downloading HLS (`.m3u8`) streams to local MP4 files.
 
@@ -39,13 +39,13 @@ go install .
 Or build a local binary:
 
 ```sh
-go build -o m3u8-downloader .
+go build -o hlsdl .
 ```
 
 ## Usage
 
 ```sh
-m3u8-downloader <input> [output] [flags]
+hlsdl <input> [output] [flags]
 ```
 
 `input` can be either:
@@ -58,19 +58,19 @@ m3u8-downloader <input> [output] [flags]
 Let the tool derive the output filename:
 
 ```sh
-m3u8-downloader "https://example.com/video/SEG.m3u8"
+hlsdl "https://example.com/video/SEG.m3u8"
 ```
 
 Write to a specific file:
 
 ```sh
-m3u8-downloader "https://example.com/video/SEG.m3u8" episode-01.mp4
+hlsdl "https://example.com/video/SEG.m3u8" episode-01.mp4
 ```
 
 Write derived filenames into another directory:
 
 ```sh
-m3u8-downloader "https://example.com/video/SEG.m3u8" --output-dir videos
+hlsdl "https://example.com/video/SEG.m3u8" --output-dir videos
 ```
 
 ### Batch downloads
@@ -78,13 +78,13 @@ m3u8-downloader "https://example.com/video/SEG.m3u8" --output-dir videos
 Pass a text file as the first argument:
 
 ```sh
-m3u8-downloader downloads.txt
+hlsdl downloads.txt
 ```
 
 With an output directory:
 
 ```sh
-m3u8-downloader downloads.txt --output-dir videos
+hlsdl downloads.txt --output-dir videos
 ```
 
 Each batch item is downloaded sequentially. The CLI prints an item indicator
