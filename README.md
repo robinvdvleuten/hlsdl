@@ -53,6 +53,10 @@ hlsdl <input> [output] [flags]
 - an HTTP(S) `.m3u8` URL
 - a text file containing multiple downloads
 
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
 ### Single download
 
 Let the tool derive the output filename:
@@ -164,3 +168,28 @@ If probing fails or duration is unavailable, the download still proceeds with
 ffmpeg defaults and the UI falls back to an indeterminate spinner.
 
 DRM-protected streams are not supported.
+
+## Contributing
+
+Everyone is encouraged to help improve this project. Here are a few ways you can help:
+
+- [Report bugs](https://github.com/robinvdvleuten/hlsdl/issues)
+- Fix bugs and [submit pull requests](https://github.com/robinvdvleuten/hlsdl/pulls)
+- Write, clarify, or fix documentation
+- Suggest or add new features
+
+To get started with development:
+
+```
+git clone https://github.com/robinvdvleuten/hlsdl.git
+cd hlsdl
+go test ./...
+```
+
+Before submitting a pull request, please make sure to run `go fmt` on any Go source files you touched so the code stays consistent.
+
+Feel free to open an issue to get feedback on your idea before spending too much time on it.
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
